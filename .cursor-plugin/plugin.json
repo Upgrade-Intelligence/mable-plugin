@@ -1,0 +1,12 @@
+{
+  "name": "mable",
+  "displayName": "Mable",
+  "description": "Publish the HTML games your AI makes as playable links, generate game assets, and see who played.",
+  "version": "1.0.0",
+  "author": { "name": "Mable", "url": "https://mable.gg", "email": "contact@mable.gg" },
+  "homepage": "https://mable.gg/mcp",
+  "repository": "https://github.com/Upgrade-Intelligence/mable-plugin",
+  "license": "MIT",
+  "logo": "assets/icon.png",
+  "keywords": ["games", "html5", "publishing", "game-assets", "playtest"]
+}

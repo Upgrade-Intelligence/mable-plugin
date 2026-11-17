@@ -1,0 +1,22 @@
+{
+  "name": "mable",
+  "displayName": "Mable",
+  "description": "Publish the HTML games your AI makes as playable links, check them on a phone-sized screen, manage drafts and versions, and see who played.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mable",
+    "url": "https://mable.gg",
+    "email": "contact@mable.gg"
+  },
+  "homepage": "https://mable.gg/mcp",
+  "repository": "https://github.com/Upgrade-Intelligence/mable-plugin",
+  "license": "MIT",
+  "keywords": [
+    "games",
+    "html5",
+    "publishing",
+    "game-development",
+    "playtest"
+  ],
+  "privacyPolicyUrl": "https://mable.gg/privacy"
+}

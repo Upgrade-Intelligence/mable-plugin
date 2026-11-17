@@ -1,0 +1,15 @@
+{
+  "name": "mable",
+  "owner": {
+    "name": "Mable",
+    "email": "contact@mable.gg"
+  },
+  "description": "Mable's official plugin: publish AI-made HTML games as playable links.",
+  "plugins": [
+    {
+      "name": "mable",
+      "source": "./",
+      "description": "Publish the HTML games your AI makes as playable links, manage drafts and versions, and see who played."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mable": {
+      "type": "http",
+      "url": "https://studio.mable.gg/mcp/games"
+    }
+  }
+}
