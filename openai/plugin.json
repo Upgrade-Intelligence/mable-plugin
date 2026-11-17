@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mable",
   "version": "1.0.0",
-  "description": "Publish the HTML games your AI makes as playable links, generate game assets, manage drafts and versions, and see who played.",
+  "description": "Publish the HTML games your AI makes as playable links, generate game assets, manage drafts and versions, and see how your games are played.",
   "author": { "name": "Mable", "email": "contact@mable.gg", "url": "https://mable.gg" },
   "homepage": "https://mable.gg/mcp",
   "repository": "https://github.com/Upgrade-Intelligence/mable-plugin",
