@@ -51,6 +51,12 @@ Publishing always happens in two steps: the first call only playtests the game a
 
 The Cursor connection also includes Mable's asset tools (sprite animation, visual effects, sound effects, music, voice and 3D models). Those consume Mable credits; the game tools above are free.
 
+## Repository layout
+
+- `.claude-plugin/` and `.mcp.json`: the Claude and Claude Code plugin (game publishing tools).
+- `.cursor-plugin/` and `mcp.json`: the Cursor plugin (all Mable tools).
+- `openai/`: the ChatGPT and Codex plugin package. Zip the contents of this folder (so `plugin.json` is at the root of the archive) to upload it.
+
 ## Data and privacy
 
 - **What is sent to Mable**: the game files you ask your AI to check or publish, the title and description you give it, and the requests your AI makes to the tools above. Mable does not request or receive your conversation history.
