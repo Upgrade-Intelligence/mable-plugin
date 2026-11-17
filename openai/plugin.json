@@ -1,0 +1,77 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "mable",
+  "version": "1.0.0",
+  "description": "Publish the HTML games your AI makes as playable links, generate game assets, manage drafts and versions, and see who played.",
+  "author": { "name": "Mable", "email": "contact@mable.gg", "url": "https://mable.gg" },
+  "homepage": "https://mable.gg/mcp",
+  "repository": "https://github.com/Upgrade-Intelligence/mable-plugin",
+  "license": "MIT",
+  "keywords": ["games", "html5", "publishing", "game-assets", "playtest"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Mable",
+        "shortDescription": "Publish AI-made games",
+        "longDescription": "Mable turns the HTML games you make with ChatGPT into a link anyone can play.\n\nAsk for a small game and to publish it on Mable: the game is checked on a phone-sized screen (or a 1280x720 desktop window), problems are explained with how to fix them, and you see a publishing summary before anything goes live. You get a link to share with friends, or you can make the game public in the Mable community after a quick review.\n\nKeep improving the same game: save private drafts that only you can try, publish a new version when you are happy, go back to an earlier version, or take a game offline. Every version records what changed.\n\nMake game assets with Mable: sprite animations from your character art, visual effects, sound effects, music, voice lines and 3D models. Asset generation uses the Mable credits in your account; checking, publishing and stats are free.\n\nSee how each game is doing: players, how many played for 30 seconds or more, returning players and play time, with a suggestion for what to improve next.",
+        "developerName": "Mable",
+        "websiteURL": "https://mable.gg/mcp",
+        "supportURL": "https://mable.gg/support",
+        "privacyPolicyURL": "https://mable.gg/privacy",
+        "termsOfServiceURL": "https://mable.gg/terms",
+        "defaultPrompt": [
+          "Make a phone game where you tap falling stars, then publish it on Mable",
+          "How many people played my Mable games this week?",
+          "Make a looping background music track for my puzzle game"
+        ],
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png"
+      },
+      "review": {
+        "commerce": false,
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Build and publish a new phone game as a link for friends",
+              "prompt": "Make a small phone game where you tap falling stars for 30 seconds and publish it on Mable as a link for my friends.",
+              "tools_triggered": ["get_platform_rules", "check_game", "publish_game"],
+              "expected_behavior": "The game is checked first. The first publish_game call returns a summary and publishes nothing; after the user agrees, the game is published link-only and a playable mable.gg link is returned."
+            },
+            {
+              "description": "Read play stats for the user's games",
+              "prompt": "Which of my Mable games had the most players this week?",
+              "tools_triggered": ["list_games", "get_game_stats"],
+              "expected_behavior": "Lists the user's games and reports players, 30-second plays and returning players for the top game, with one suggestion."
+            },
+            {
+              "description": "Save a private draft without changing the live game",
+              "prompt": "In my Mable game, change the timer to 60 seconds and save it as a draft so I can try it first.",
+              "tools_triggered": ["list_games", "read_game_file", "edit_game_files"],
+              "expected_behavior": "The change is saved as a new private draft version and a preview link only the user can open is returned; players still see the live version."
+            },
+            {
+              "description": "Restore an earlier version",
+              "prompt": "Go back to the previous version of my latest Mable game.",
+              "tools_triggered": ["list_versions", "restore_version"],
+              "expected_behavior": "The earlier version is copied into a new draft version; history is kept and the live game is unchanged until the user publishes it."
+            },
+            {
+              "description": "Generate background music for a game",
+              "prompt": "Make a calm looping background music track for my puzzle game.",
+              "tools_triggered": ["start_bgm", "get_bgm_job"],
+              "expected_behavior": "A music job is started and polled until it finishes; a downloadable audio file is returned."
+            }
+          ],
+          "negative": [
+            { "description": "General knowledge question", "prompt": "What is the capital of Australia?" },
+            { "description": "Unrelated coding task", "prompt": "Write a Python function that sorts a list of numbers." },
+            { "description": "Unrelated writing task", "prompt": "Write a short thank-you note to my teacher." }
+          ]
+        }
+      },
+      "publication": {
+        "release_notes": "First release: publish AI-made HTML games as playable links, manage drafts and versions, generate game assets, and read play stats."
+      }
+    }
+  }
+}
