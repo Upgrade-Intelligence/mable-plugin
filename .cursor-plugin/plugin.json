@@ -1,7 +1,7 @@
 {
   "name": "mable",
   "displayName": "Mable",
-  "description": "Publish the HTML games your AI makes as playable links, generate game assets, and see who played.",
+  "description": "Publish the HTML games your AI makes as playable links, generate game assets, and see how your games are played.",
   "version": "1.0.0",
   "author": { "name": "Mable", "url": "https://mable.gg", "email": "contact@mable.gg" },
   "homepage": "https://mable.gg/mcp",

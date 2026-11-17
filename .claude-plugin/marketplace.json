@@ -9,7 +9,7 @@
     {
       "name": "mable",
       "source": "./",
-      "description": "Publish the HTML games your AI makes as playable links, manage drafts and versions, and see who played."
+      "description": "Publish the HTML games your AI makes as playable links, manage drafts and versions, and see how your games are played."
     }
   ]
 }
