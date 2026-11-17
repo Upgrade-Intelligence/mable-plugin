@@ -4,7 +4,7 @@
 
 Mable turns the HTML games your AI makes into a link anyone can play. Connect Mable to the AI tool you already use, then just say "publish my game". Your AI checks the game on a phone-sized screen, publishes it with your confirmation, and later tells you who played and where they stopped.
 
-Website: <https://mable.gg/mcp> · Support: <contact@mable.gg> · Privacy: <https://mable.gg/privacy> · Terms: <https://mable.gg/terms>
+Website: <https://mable.gg/mcp> · Support: <https://mable.gg/support> · Privacy: <https://mable.gg/privacy> · Terms: <https://mable.gg/terms>
 
 ## What this plugin contains
 
@@ -60,7 +60,9 @@ The Cursor connection also includes Mable's asset tools (sprite animation, visua
 
 ## Support
 
-Email <contact@mable.gg>.
+- Help center: <https://mable.gg/support>
+- Email: <contact@mable.gg>
+- Community: [Mable Discord](https://discord.gg/2HQN4XrgmP)
 
 ## License
 
