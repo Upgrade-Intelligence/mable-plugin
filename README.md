@@ -2,7 +2,7 @@
 
 <img src="assets/icon.png" alt="Mable" width="96" height="96">
 
-Mable turns the HTML games your AI makes into a link anyone can play. Connect Mable to the AI tool you already use, then just say "publish my game". Your AI checks the game on a phone-sized screen, publishes it with your confirmation, and later tells you who played and where they stopped.
+Mable turns the HTML games your AI makes into a link anyone can play. Connect Mable to the AI tool you already use, then just say "publish my game". Your AI checks the game on a phone-sized screen, publishes it with your confirmation, and later shows you how your games are played.
 
 Website: <https://mable.gg/mcp> · Support: <https://mable.gg/support> · Privacy: <https://mable.gg/privacy> · Terms: <https://mable.gg/terms>
 
